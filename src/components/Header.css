@@ -1,0 +1,47 @@
+/* NavMenu.css */
+
+.centered-list {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Centers the list items */
+  flex-grow: 1;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  background-color: rgba(231, 236, 255, 0.36); /* Set background color with opacity */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Ensures proper spacing between logo and nav items */
+  align-items: center;
+  width: 100%; /* Use full width */
+  padding: 0 20px; /* Add some padding for better spacing */
+  box-shadow: 0 1px 1px rgba(5, 0, 0, 0.1);
+}
+
+.nav-container .centered-list ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for list items */
+  justify-content: center; /* Center list items */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-container .centered-list ul li {
+  margin: 0 10px; /* Add some space between list items */
+}
+
+.nav-container .centered-list ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Default text color */
+  padding: 10px 15px; /* Add padding for clickable area */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.nav-container .centered-list ul li a:hover {
+  background-color: rgba(231, 236, 255, 0.36); /* Adjust hover background color */
+  color: #000; /* Adjust hover text color */
+}
